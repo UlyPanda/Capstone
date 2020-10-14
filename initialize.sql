@@ -1,9 +1,10 @@
-DROP TABLE IF EXISTS Weapons, Users, handguns, shotugns, rifles;
+DROP TABLE IF EXISTS Weapons, Users, handguns, shotguns, rifles;
 
 CREATE TABLE Weapons (
-  handgun_id INT (12),
-  rifle_id INT (12),
-  shotgun_id INT (12),
+  id INT(12)
+  handguns INT (12),
+  rifles INT (12),
+  shotguns INT (12),
   PRIMARY KEY (handgun_id, rifle_id, shotgun_id)
 );
 
@@ -11,6 +12,7 @@ CREATE TABLE Users (
   id INT (12),
   first_name VARCHAR(50),
   last_name VARCHAR(50),
+  user_weapons VARCHAR(100),
   PRIMARY KEY (id)
 );
 
